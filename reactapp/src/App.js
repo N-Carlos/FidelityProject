@@ -10,7 +10,7 @@ import Contact from "./pages/contact";
 import Hedge from "./pages/hedgefundmain";
 import { createGlobalStyle } from "styled-components";
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
-import { Button } from "./components/Navbar/NavbarElements";
+
 
 
 const GlobalStyle = createGlobalStyle`
@@ -32,7 +32,6 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/index" element={<Home />} />
         <Route path="/hedgefundmain" element={<Hedge />} />
-        <Button to = "hedgefundmain"/>
       </Routes>
       </Auth0ProviderWithHistory>
     </Router>
