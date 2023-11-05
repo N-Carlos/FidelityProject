@@ -39,6 +39,9 @@ export const Tabs = styled.div`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  &:hover {
+    background-color: #e1e6e1;
+  }
 `;
 
 export const MiddleTab = styled(Tabs)`
@@ -54,9 +57,10 @@ export const MiddleTab = styled(Tabs)`
   text-overflow: ellipsis;
   font-weight: bold;
   flex: 0 0 auto;
+  &:hover {
+    background-color: #e1e6e1;
+  }
 `;
-
-
 
 
 export const Bars = styled(FaBars)`
@@ -83,3 +87,24 @@ export const NavMenu = styled.div`
   justify-content: center;
 `;
 
+export const Button = styled.button`
+  background-color: #6D933E;
+  color: #FFFFFF;
+  padding: 0 6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 65px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e1e6e1;
+  }
+`;

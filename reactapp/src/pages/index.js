@@ -10,6 +10,7 @@ const Home = () => {
           Hedge fund investment requires a high minimum investment or net worth from accredited investors. 
           Hedge funds charge higher fees than conventional investment funds.
         </p>
+        
     </div>
   );
 };

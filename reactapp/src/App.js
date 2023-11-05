@@ -8,6 +8,7 @@ import Blogs from "./pages/blogs";
 import SignUp from "./pages/signup";
 import Contact from "./pages/contact";
 import { createGlobalStyle } from "styled-components";
+import Hedge from "./pages/hedgefundmain";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/index" element={<Home />} />
+        <Route path="/hedgefunmain" element={<Hedge/>} />
       </Routes>
     </Router>
   );

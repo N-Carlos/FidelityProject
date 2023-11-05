@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Nav, NavLink, NavMenu, Tabs, MiddleTab } from "./NavbarElements";
+import { Nav, NavLink, NavMenu, Tabs, MiddleTab, Button } from "./NavbarElements";
 
 
 const Navbar = () => {
@@ -32,6 +32,9 @@ const Navbar = () => {
               Product
             </NavLink>
           </Tabs>
+          <Button style={{ position: "absolute", bottom: "10px", left: "10px" }}>
+            Start Investing Today!
+          </Button>
         </NavMenu>
     </>
   );
