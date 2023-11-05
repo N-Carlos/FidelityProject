@@ -7,10 +7,19 @@ import About from "./pages/about";
 import Blogs from "./pages/blogs";
 import SignUp from "./pages/signup";
 import Contact from "./pages/contact";
+import { createGlobalStyle } from "styled-components";
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #E0EAD1;
+    margin: 0;
+    padding: 0;
+  }
+`;
 function App() {
   return (
     <Router>
+      <GlobalStyle /> 
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
