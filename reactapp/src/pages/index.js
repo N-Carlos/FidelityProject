@@ -1,5 +1,6 @@
 import React from "react";
-import { Button } from "../components/Navbar/NavbarElements"; 
+import LoginButton from "../components/login-button"; 
+import SignupButton from "../components/signup-button";
 
 const Home = () => {
   return (
@@ -11,8 +12,10 @@ const Home = () => {
         Hedge funds charge higher fees than conventional investment funds.
       </p>
       <div className="navbar-container">
-        <Button img="profile_pic.png">Click Me</Button> 
+        <LoginButton>Click Me</LoginButton> 
+        <SignupButton>Click Me</SignupButton>
       </div>
+      
     </div>
   );
 };

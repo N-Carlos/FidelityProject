@@ -9,6 +9,7 @@ import SignUp from "./pages/signup";
 import Contact from "./pages/contact";
 import { createGlobalStyle } from "styled-components";
 import Hedge from "./pages/hedgefundmain";
+import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <Router>
+      <Auth0ProviderWithHistory>
       <GlobalStyle /> 
       <Navbar />
       <Routes>
@@ -25,10 +27,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/index" element={<Home />} />
         <Route path="/hedgefundmain" element={<Hedge/>} />
       </Routes>
+      </Auth0ProviderWithHistory>
     </Router>
   );
 }
