@@ -7,8 +7,11 @@ import About from "./pages/about";
 import Blogs from "./pages/calculator";
 import SignUp from "./pages/signup";
 import Contact from "./pages/contact";
-import { createGlobalStyle } from "styled-components";
 import Hedge from "./pages/hedgefundmain";
+import { createGlobalStyle } from "styled-components";
+import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
+
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -19,6 +22,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Auth0ProviderWithHistory>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/AccountsAndTrade" element={<About />} />
@@ -28,6 +32,7 @@ function App() {
         <Route path="/index" element={<Home />} />
         <Route path="/hedgefundmain" element={<Hedge />} />
       </Routes>
+      </Auth0ProviderWithHistory>
     </Router>
   );
 }
