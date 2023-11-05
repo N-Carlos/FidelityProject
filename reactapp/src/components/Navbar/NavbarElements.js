@@ -3,30 +3,60 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background: #ffb3ff;
   height: 85px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  justify-content: center;
+  padding: 0.2rem 2%;
   z-index: 12;
 `;
 
 export const NavLink = styled(Link)`
-  color: #808080;
-  display: flex;
-  align-items: center;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
-  &.active {
-    color: #4d4dff;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+export const Tabs = styled.div`
+  background-color: #6D933E;
+  text-decoration: none;
+  padding: 0 2.0rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 8.5%;
+  flex: 0 0 auto;
+`;
+
+export const MiddleTab = styled(Tabs)`
+  background-color: #6D933E;
+  padding: 0 3rem;
+  font-size: 1.2rem;
+  height: 65px;
+  margin: 8%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 0 0 auto; /* Prevent the middle tab from shrinking */
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #808080;
+  color: red;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -42,12 +72,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: -24px;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-white-space: nowrap; */
   @media screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
