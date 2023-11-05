@@ -10,7 +10,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
@@ -25,7 +25,7 @@ export const NavLink = styled(Link)`
 
 export const Tabs = styled.div`
   content: fit;
-  background-color: #6D933E;
+  background-color: #6d933e;
   text-decoration: none;
   margin: 2%; /* Adjust margin to increase space between tabs (2% adds 2% of the available width) */
   cursor: pointer;
@@ -82,13 +82,13 @@ export const NavMenu = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
-  background-color: #E0EAD1;
+  background-color: #e0ead1;
   justify-content: center;
 `;
 
 export const Button = styled.button`
-  background-color: #6D933E;
-  color: #FFFFFF;
+  background-color: #6d933e;
+  color: #ffffff;
   padding: 0 6rem;
   cursor: pointer;
   display: flex;
@@ -107,3 +107,7 @@ export const Button = styled.button`
   }
 `;
 
+export const TesterDivs = styled.div`
+  content: fit;
+  background-color: Yellow;
+`;

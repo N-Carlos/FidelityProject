@@ -18,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <Router>
-      <GlobalStyle />
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />

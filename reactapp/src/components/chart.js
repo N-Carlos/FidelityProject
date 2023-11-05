@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ChartFilter from "./chartfilter";
 import Card from "./card";
 import {
@@ -9,8 +9,6 @@ import {
   AreaChart,
   Tooltip,
 } from "recharts";
-import StockContext from "../context/stockcontext";
-import ThemeContext from "../context/themecontext";
 
 import { fetchHistoricalData } from "../utils/api/stock-api.js";
 import {
@@ -23,7 +21,7 @@ import { chartConfig } from "../constants/config";
 const Chart = () => {
   const [filter, setFilter] = useState("1W");
 
-  const { stockSymbol } = "goog";
+  const stockSymbol = "GOOG";
 
   const [data, setData] = useState([]);
 
@@ -104,7 +102,7 @@ const Chart = () => {
             type="monotone"
             dataKey="value"
             stroke="#312e81"
-            fill="url(#chartColor)"
+            fill="red"
             fillOpacity={1}
             strokeWidth={0.5}
           />
