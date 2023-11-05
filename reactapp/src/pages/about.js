@@ -4,33 +4,33 @@ import "chart.js/auto";
 
 const UserData = [
   {
-    id: 1,
-    year: 2016,
-    userGain: 80000,
+    id: "Initial Investment",
+    year: "Initial Investment",
+    userGain: 2000,
     userLost: 823,
   },
   {
-    id: 2,
-    year: 2017,
-    userGain: 45677,
+    id: "Annual Return Rate",
+    year: "Annual Return Rate",
+    userGain: 7.2,
     userLost: 345,
   },
   {
-    id: 3,
-    year: 2018,
-    userGain: 78888,
+    id: "Annual Management Fee",
+    year: 2023,
+    userGain: 1.0,
     userLost: 555,
   },
   {
-    id: 4,
-    year: 2019,
-    userGain: 90000,
+    id: "Contribution",
+    year: "Contribution",
+    userGain: 500,
     userLost: 4555,
   },
   {
-    id: 5,
-    year: 2020,
-    userGain: 4300,
+    id: "Expected Return ",
+    year: "Expected Return",
+    userGain: 91602,
     userLost: 234,
   },
 ];
@@ -40,7 +40,7 @@ const About = () => {
     labels: UserData.map((data) => data.year),
     datasets: [
       {
-        label: "Users Gained",
+        label: "User Info",
         data: UserData.map((data) => data.userGain),
         backgroundColor: [
           "rgba(75,192,192,1)",
