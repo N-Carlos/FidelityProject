@@ -12,8 +12,8 @@ const Home = () => {
         Hedge funds charge higher fees than conventional investment funds.
       </p>
       <div className="navbar-container">
-        <LoginButton>Click Me</LoginButton> 
-        <SignupButton>Click Me</SignupButton>
+        
+        
       </div>
       
     </div>

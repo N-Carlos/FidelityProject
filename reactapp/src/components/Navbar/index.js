@@ -7,7 +7,7 @@ import {
   MiddleTab,
   Button,
 } from "./NavbarElements";
-
+import LoginButton from "../login-button";
 const Navbar = () => {
   return (
     <>
@@ -40,6 +40,9 @@ const Navbar = () => {
         <Button style={{ position: "absolute", bottom: "10px", left: "10px" }}>
           Start Investing Today!
         </Button>
+        <Tabs>
+        <LoginButton></LoginButton>
+        </Tabs>
       </NavMenu>
     </>
   );

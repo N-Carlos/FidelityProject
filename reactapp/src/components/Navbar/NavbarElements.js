@@ -1,6 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
+import LoginButton from "../login-button";
 
 export const Nav = styled.nav`
   height: 85px;
@@ -89,7 +90,7 @@ export const NavMenu = styled.div`
 export const Button = styled.button`
   background-color: #6D933E;
   color: #FFFFFF;
-  padding: 0 6rem;
+  padding: 0 3rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -106,4 +107,3 @@ export const Button = styled.button`
     background-color: #e1e6e1;
   }
 `;
-
