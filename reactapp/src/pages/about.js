@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PieChart from "../components/piecharts";
+import "chart.js/auto";
 
 const UserData = [
   {

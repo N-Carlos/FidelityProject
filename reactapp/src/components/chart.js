@@ -23,7 +23,7 @@ import { chartConfig } from "../constants/config";
 const Chart = () => {
   const [filter, setFilter] = useState("1W");
 
-  const { stockSymbol } = useContext(StockContext);
+  const { stockSymbol } = "goog";
 
   const [data, setData] = useState([]);
 
@@ -70,7 +70,7 @@ const Chart = () => {
 
   return (
     <Card>
-      <ul className="flex absolute top-2 right-2 z-40">
+      <ul>
         {Object.keys(chartConfig).map((item) => (
           <li key={item}>
             <ChartFilter

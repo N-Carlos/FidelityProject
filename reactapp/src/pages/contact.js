@@ -1,4 +1,5 @@
 import React from "react";
+import Chart from "../components/chart.js";
 
 const Contact = () => {
 
@@ -10,7 +11,7 @@ const Contact = () => {
 
   return (
     <div>
-      <h1 style={labelInputContainerStyle}>Mail us on feedback@geeksforgeeks.org</h1>
+      <Chart></Chart>
     </div>
   );
 };
