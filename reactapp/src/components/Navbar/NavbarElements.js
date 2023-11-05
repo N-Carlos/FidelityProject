@@ -52,7 +52,7 @@ export const MiddleTab = styled(Tabs)`
   height: 65px;
   width: 20%;
   margin: 2%; /* Adjust margin for the middle tab */
-  border-radius: 20px;
+  border-radius: 30px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -96,7 +96,7 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 30px;
   height: 65px;
   white-space: nowrap;
   overflow: hidden;

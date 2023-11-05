@@ -27,7 +27,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/index" element={<Home />} />
-        <Route path="/hedgefunmain" element={<Hedge/>} />
+        <Route path="/hedgefundmain" element={<Hedge/>} />
       </Routes>
     </Router>
   );
