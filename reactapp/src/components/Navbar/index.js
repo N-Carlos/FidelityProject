@@ -1,9 +1,16 @@
 import React from "react";
 import { NavLink, NavMenu, Tabs, MiddleTab, Button } from "./NavbarElements";
 
-
 import LoginButton from "../login-button";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/hedgefundmain`;
+    navigate(path);
+  };
+
   return (
     <>
       <NavMenu>
@@ -32,7 +39,10 @@ const Navbar = () => {
             Product
           </NavLink>
         </Tabs>
-        <Button style={{ position: "absolute", bottom: "10px", left: "10px" }}>
+        <Button
+          onClick={routeChange}
+          style={{ position: "absolute", bottom: "10px", left: "10px" }}
+        >
           Start Investing Today!
         </Button>
         <Tabs>
