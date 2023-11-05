@@ -1,6 +1,4 @@
 import React from "react";
-import Stylediv from "./form.js";
-
 
 const Blogs = () => {
   return <form> 
