@@ -33,7 +33,7 @@ export const Tabs = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 45px;
   width: auto%;
   white-space: nowrap;
@@ -52,6 +52,7 @@ export const MiddleTab = styled(Tabs)`
   height: 65px;
   width: 20%;
   margin: 2%; /* Adjust margin for the middle tab */
+  border-radius: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -103,7 +104,6 @@ export const Button = styled.button`
   font-weight: bold;
   border: none;
   transition: background-color 0.3s;
-
   &:hover {
     background-color: #e1e6e1;
   }
