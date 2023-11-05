@@ -22,8 +22,8 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Navbar />
       <Auth0ProviderWithHistory>
+      <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/AccountsAndTrade" element={<About />} />
