@@ -1,14 +1,6 @@
 import React from "react";
 import { NavLink, NavMenu, Tabs, MiddleTab, Button } from "./NavbarElements";
 
-import {
-  Nav,
-  NavLink,
-  NavMenu,
-  Tabs,
-  MiddleTab,
-  Button,
-} from "./NavbarElements";
 import LoginButton from "../login-button";
 const Navbar = () => {
   return (
