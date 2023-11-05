@@ -13,12 +13,12 @@ const Navbar = () => {
     <>
       <NavMenu>
         <Tabs>
-          <NavLink to="/about" activeStyle={{ color: "#4d4dff" }}>
+          <NavLink to="/AccountsAndTrade" activeStyle={{ color: "#4d4dff" }}>
             Accounts and Trade
           </NavLink>
         </Tabs>
         <Tabs>
-          <NavLink to="/contact" activeStyle={{ color: "#4d4dff" }}>
+          <NavLink to="/PlanningAndAdvice" activeStyle={{ color: "#4d4dff" }}>
             Planning and Advice
           </NavLink>
         </Tabs>
@@ -33,7 +33,7 @@ const Navbar = () => {
           </NavLink>
         </Tabs>
         <Tabs>
-          <NavLink to="/sign-up" activeStyle={{ color: "#4d4dff" }}>
+          <NavLink to="/Calculator" activeStyle={{ color: "#4d4dff" }}>
             Product
           </NavLink>
         </Tabs>
