@@ -2,12 +2,12 @@ import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
+
 export const Nav = styled.nav`
   height: 85px;
   display: flex;
-  justify-content: center;
-  padding: 0.2rem 2%;
-  z-index: 12;
+  justify-content: space-evenly;
+  z-index: 1;
 `;
 
 export const NavLink = styled(Link)`
@@ -18,41 +18,46 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
   height: 45px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold; /* Set font weight to bold */
 `;
 
 export const Tabs = styled.div`
+  content: fit;
   background-color: #6D933E;
   text-decoration: none;
-  padding: 0 2.0rem;
+  margin: 2%; /* Adjust margin to increase space between tabs (2% adds 2% of the available width) */
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
   height: 45px;
+  width: auto%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 8.5%;
-  flex: 0 0 auto;
 `;
 
 export const MiddleTab = styled(Tabs)`
   background-color: #6D933E;
-  padding: 0 3rem;
+  color: #FFFFFF;
+  padding: 0 2.5rem; /* Increase padding for the middle tab */
   font-size: 1.2rem;
   height: 65px;
-  margin: 8%;
+  width: 20%;
+  margin: 2%; /* Adjust margin for the middle tab */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  flex: 0 0 auto; /* Prevent the middle tab from shrinking */
+  font-weight: bold;
+  flex: 0 0 auto;
 `;
+
+
+
 
 export const Bars = styled(FaBars)`
   display: none;
@@ -71,8 +76,10 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+  background-color:#E0EAD1;
+  justify-content: center;
+`;
+

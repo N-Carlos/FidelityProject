@@ -2,14 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Nav, NavLink, NavMenu, Tabs, MiddleTab } from "./NavbarElements";
 
-const NavbarWithBackgroundColor = styled(Nav)`
-  background-color: #E0EAD1;
-`;
 
 const Navbar = () => {
   return (
     <>
-      <NavbarWithBackgroundColor>
         <NavMenu>
           <Tabs>
             <NavLink to="/about" activeStyle={{ color: "#4d4dff" }}>
@@ -22,7 +18,7 @@ const Navbar = () => {
             </NavLink>
           </Tabs>
           <MiddleTab>
-            <NavLink to="/blogs" activeStyle={{ color: "#4d4dff" }}>
+            <NavLink to="/index" activeStyle={{ color: "#4d4dff" }}>
               Fidelity
             </NavLink>
           </MiddleTab>
@@ -37,7 +33,6 @@ const Navbar = () => {
             </NavLink>
           </Tabs>
         </NavMenu>
-      </NavbarWithBackgroundColor>
     </>
   );
 };

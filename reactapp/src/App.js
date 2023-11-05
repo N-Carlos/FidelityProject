@@ -12,8 +12,6 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: #E0EAD1;
-    margin: 0;
-    padding: 0;
   }
 `;
 function App() {
@@ -27,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/index" element={<Home />} />
       </Routes>
     </Router>
   );
