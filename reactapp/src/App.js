@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <Router>
-      <GlobalStyle /> 
+      <GlobalStyle />
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -27,7 +27,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/index" element={<Home />} />
-        <Route path="/hedgefundmain" element={<Hedge/>} />
+        <Route path="/hedgefundmain" element={<Hedge />} />
       </Routes>
     </Router>
   );
