@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink, NavMenu, Tabs, MiddleTab, Button } from "./NavbarElements";
+
 import {
   Nav,
   NavLink,
@@ -41,7 +43,7 @@ const Navbar = () => {
           Start Investing Today!
         </Button>
         <Tabs>
-        <LoginButton></LoginButton>
+          <LoginButton></LoginButton>
         </Tabs>
       </NavMenu>
     </>

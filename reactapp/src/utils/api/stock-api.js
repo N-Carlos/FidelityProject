@@ -6,7 +6,7 @@ const basePath = "https://finnhub.io/api/v1";
  * @returns {Promise<Object[]>} Response array of best stock matches
  */
 export const searchSymbol = async (query) => {
-  const url = `${basePath}/search?q=${query}&token='cl3dt9hr01qqqk61tkqgcl3dt9hr01qqqk61tkr0`;
+  const url = `${basePath}/search?q=${query}&token=cl3pv1hr01qp2kg93uu0cl3pv1hr01qp2kg93uug`;
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -23,7 +23,7 @@ export const searchSymbol = async (query) => {
  * @returns {Promise<Object>} Response object
  */
 export const fetchStockDetails = async (stockSymbol) => {
-  const url = `${basePath}/stock/profile2?symbol=${stockSymbol}&token='cl3dt9hr01qqqk61tkqgcl3dt9hr01qqqk61tkr0`;
+  const url = `${basePath}/stock/profile2?symbol=${stockSymbol}&token=cl3pv1hr01qp2kg93uu0cl3pv1hr01qp2kg93uug`;
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -40,7 +40,7 @@ export const fetchStockDetails = async (stockSymbol) => {
  * @returns {Promise<Object>} Response object
  */
 export const fetchQuote = async (stockSymbol) => {
-  const url = `${basePath}/quote?symbol=${stockSymbol}&token='cl3dt9hr01qqqk61tkqgcl3dt9hr01qqqk61tkr0`;
+  const url = `${basePath}/quote?symbol=${stockSymbol}&token=cl3pv1hr01qp2kg93uu0cl3pv1hr01qp2kg93uug`;
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -65,7 +65,7 @@ export const fetchHistoricalData = async (
   from,
   to
 ) => {
-  const url = `${basePath}/stock/candle?symbol=${stockSymbol}&resolution=${resolution}&from=${from}&to=${to}&token='cl3dt9hr01qqqk61tkqgcl3dt9hr01qqqk61tkr0`;
+  const url = `${basePath}/stock/candle?symbol=${stockSymbol}&resolution=${resolution}&from=${from}&to=${to}&token=cl3pv1hr01qp2kg93uu0cl3pv1hr01qp2kg93uug`;
   const response = await fetch(url);
 
   if (!response.ok) {
